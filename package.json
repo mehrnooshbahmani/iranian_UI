@@ -1,0 +1,26 @@
+{
+  "name": "h",
+  "version": "1.0.0",
+  "description": "h",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "scss": "node-sass src -o src",
+    "scss:dev": "node-sass --watch src -o src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css": "^3.0.0",
+    "css-loader": "^5.2.6",
+    "sass": "^1.32.7",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
