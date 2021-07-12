@@ -1,16 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="src\style.css"> 
+    <link rel="stylesheet" href="src\style.css">
     <title>Document</title>
 </head>
-<body>
+
+<body class="body-container">
+
+    <div class="main-container">
+        <header class="body-header">
+            <div class="body-header_title">صفحه اصلی</div>
+            <div class="body-header_information">مهرنوش بهمنی</div>
+            <div class="body-header_date">1400/04/21</div>
+            <div class="body-header_statistics">
+                <div class="body-header_statistics_weekly">آمار هفتگی</div>
+                <div class="body-header_statistics_daily">آمار روزانه</div>
+            </div>
+        </header>
+        <div class="body-main">
+            <div class="body-main_situation-statistics">
+                <div class="body-main_situation-statistics_first-container">
+                    <div class="body-main_situation-statistics_first-container_title">آمار کارشناسان</div>
+                    <select class="body-main_situation-statistics_first-container_dropdown">
+                        <option value=””>لیست کارشناسان</option>
+                    </select>
+                </div>
+                <svg class="body-main_situation-statistics_expert-number_svg" width="250" height="250">
+                    <circle class="body-main_situation-statistics_expert-number_svg_circle-first-progress" cx="125"
+                        cy="125" />
+                    <circle class="body-main_situation-statistics_expert-number_svg_circle-second-progress" cx="125"
+                        cy="125" />
+                    <circle class="body-main_situation-statistics_expert-number_svg_circle-third-progress" cx="125"
+                        cy="125" />
+                    <circle class="body-main_situation-statistics_expert-number_svg_circle-fourth-progress" cx="125"
+                        cy="125" />
+                    <circle class="body-main_situation-statistics_expert-number_svg_circle-compeleted" cx="125"
+                        cy="125" />
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+                <div class="body-main_situation-statistics_inner">
+                    <div class="body-main_situation-statistics_inner_city">تهران</div>
+                    <div class="body-main_situation-statistics_inner_number">12</div>
+                    <div class="body-main_situation-statistics_inner_expert-number">تعداد کارشناسان</div>
+                </div>
+                <ul class="body-main_situation-statistics_second-container">
+                    <li class="body-main_situation-statistics_second-container_no-refrence">
+                        <div class="body-main_situation-statistics_second-container_no-refrence_number">32</div>
+                        <span class="body-main_situation-statistics_second-container_no-refrence_title">هماهنگی و عدم مراجعه به محل بازدید</span>
+                    </li>
+                    <li class="body-main_situation-statistics_second-container_refrenced">
+                        <div class="body-main_situation-statistics_second-container_refrenced_number">16</div>
+                        <span class="body-main_situation-statistics_second-container_refrenced_title">هماهنگی و مراجعه به محل بازدید</span>
+                    </li>
+                    <li class="body-main_situation-statistics_second-container_concerted">
+                        <div class="body-main_situation-statistics_second-container_concerted_number">32</div>
+                        <span class="body-main_situation-statistics_second-container_concerted_title">هماهنگ شده</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="body-main_expert-statistics">
+                <div class="body-main_expert-statistics_title">آمار پرونده ها بر اساس وضعیت</div>
+                <ul class="body-main_expert-statistics_container">
+                    <li class="body-main_expert-statistics_container_number">
+                        <svg class="body-main_expert-statistics_container_number_svg" width="100" height="100">
+                            <circle class="body-main_expert-statistics_container_number_svg_circle-progress" cx="50"
+                                cy="50" />
+                            <circle class="body-main_expert-statistics_container_number_svg_circle" cx="50" cy="50" />
+
+                            Sorry, your browser does not support inline SVG.
+                        </svg>
+                        <span class="body-main_expert-statistics_container_number_percent">100</span>
+                        <span class="body-main_expert-statistics_container_number_title">تعداد کل پرونده ها</span>
+                    </li>
+                    <li class="body-main_expert-statistics_container_study">
+                        <svg class="body-main_expert-statistics_container_study_svg" width="100" height="100">
+                            <circle class="body-main_expert-statistics_container_study_svg_circle-progress" cx="50"
+                                cy="50" />
+                            <circle class="body-main_expert-statistics_container_study_svg_circle" cx="50" cy="50" />
+                            Sorry, your browser does not support inline SVG.
+                        </svg>
+                        <span class="body-main_expert-statistics_container_study_percent">20</span>
+                        <span class="body-main_expert-statistics_container_study_title">در واحد بررسی پرونده</span>
+                    </li>
+                    <li class="body-main_expert-statistics_container_expert-fixing"><svg
+                            class="body-main_expert-statistics_container_expert-fixing_svg" width="100" height="100">
+                            <circle class="body-main_expert-statistics_container_expert-fixing_svg_circle-progress"
+                                cx="50" cy="50" />
+                            <circle class="body-main_expert-statistics_container_expert-fixing_svg_circle" cx="50"
+                                cy="50" />
+                            Sorry, your browser does not support inline SVG.
+                        </svg>
+                        <span class="body-main_expert-statistics_container_expert-fixing_percent">80</span>
+                        <span class="body-main_expert-statistics_container_expert-fixing_title">در انتظار تایین
+                            کارشناس</span>
+                    </li>
+                    <li class="body-main_expert-statistics_container_study">
+                        <svg class="body-main_expert-statistics_container_study_svg" width="100" height="100">
+                            <circle class="body-main_expert-statistics_container_study_svg_circle-progress" cx="50"
+                                cy="50" />
+                            <circle class="body-main_expert-statistics_container_study_svg_circle" cx="50" cy="50" />
+
+                            Sorry, your browser does not support inline SVG.
+                        </svg>
+                        <span class="body-main_expert-statistics_container_study_percent">20</span>
+                        <span class="body-main_expert-statistics_container_study_title">در واحد بررسی پرونده</span>
+                    </li>
+                    <li class="body-main_expert-statistics_container_expert-fixing"><svg
+                            class="body-main_expert-statistics_container_expert-fixing_svg" width="100" height="100">
+                            <circle class="body-main_expert-statistics_container_expert-fixing_svg_circle-progress"
+                                cx="50" cy="50" />
+                            <circle class="body-main_expert-statistics_container_expert-fixing_svg_circle" cx="50"
+                                cy="50" />
+
+                            Sorry, your browser does not support inline SVG.
+                        </svg>
+                        <span class="body-main_expert-statistics_container_expert-fixing_percent">80</span>
+                        <span class="body-main_expert-statistics_container_expert-fixing_title">در انتظار تایین
+                            کارشناس</span>
+                    </li>
+                    <li class="body-main_expert-statistics_container_under-expert"><svg
+                            class="body-main_expert-statistics_container_under-expert_svg" width="100" height="100">
+                            <circle class="body-main_expert-statistics_container_under-expert_svg_circle-progress"
+                                cx="50" cy="50" />
+                            <circle class="body-main_expert-statistics_container_under-expert_svg_circle" cx="50"
+                                cy="50" />
+                            Sorry, your browser does not support inline SVG.
+                        </svg>
+                        <span class="body-main_expert-statistics_container_under-expert_percent">60</span>
+                        <span class="body-main_expert-statistics_container_under-expert_title">در دست کارشناس</span>
+                    </li>
+                    <li class="body-main_expert-statistics_container_under-specialized"><svg
+                            class="body-main_expert-statistics_container_under-specialized_svg" width="100"
+                            height="100">
+                            <circle class="body-main_expert-statistics_container_under-specialized_svg_circle-progress"
+                                cx="50" cy="50" />
+                            <circle class="body-main_expert-statistics_container_under-specialized_svg_circle" cx="50"
+                                cy="50" />
+                            Sorry, your browser does not support inline SVG.
+                        </svg>
+                        <span class="body-main_expert-statistics_container_under-specialized_percent">90</span>
+                        <span class="body-main_expert-statistics_container_under-specialized_title">در دست کارشناس
+                            متخصص</span>
+                    </li>
+                    <li class="body-main_expert-statistics_container_under-insurer"><svg
+                            class="body-main_expert-statistics_container_under-insurer_svg" width="100" height="100">
+                            <circle class="body-main_expert-statistics_container_under-insurer_svg_circle-progress"
+                                cx="50" cy="50" />
+                            <circle class="body-main_expert-statistics_container_under-insurer_svg_circle" cx="50"
+                                cy="50" />
+                            Sorry, your browser does not support inline SVG.
+                        </svg>
+                        <span class="body-main_expert-statistics_container_under-insurer_percent">35</span>
+                        <span class="body-main_expert-statistics_container_under-insurer_title">در بیمه گر</span>
+                    </li>
+                    <li class="body-main_expert-statistics_container_under-specialized"><svg
+                            class="body-main_expert-statistics_container_under-specialized_svg" width="100"
+                            height="100">
+                            <circle class="body-main_expert-statistics_container_under-specialized_svg_circle-progress"
+                                cx="50" cy="50" />
+                            <circle class="body-main_expert-statistics_container_under-specialized_svg_circle" cx="50"
+                                cy="50" />
+                            Sorry, your browser does not support inline SVG.
+                        </svg>
+                        <span class="body-main_expert-statistics_container_under-specialized_percent">90</span>
+                        <span class="body-main_expert-statistics_container_under-specialized_title">در دست کارشناس
+                            متخصص</span>
+                    </li>
+                    <li class="body-main_expert-statistics_container_under-insurer"><svg
+                            class="body-main_expert-statistics_container_under-insurer_svg" width="100" height="100">
+                            <circle class="body-main_expert-statistics_container_under-insurer_svg_circle-progress"
+                                cx="50" cy="50" />
+                            <circle class="body-main_expert-statistics_container_under-insurer_svg_circle" cx="50"
+                                cy="50" />
+                            Sorry, your browser does not support inline SVG.
+                        </svg>
+                        <span class="body-main_expert-statistics_container_under-insurer_percent">35</span>
+                        <span class="body-main_expert-statistics_container_under-insurer_title">در بیمه گر</span>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="body-main_information">
+            <div class="body-main_information_title">پرونده های جدید دریافتی</div>
+            <div class="body-main_information_new-received-file">
+                <header class="body-main_information_new-received-file_header">
+                    <select class="body-main_information_new-received-file_header_dropdown">
+                        <option value=””>ارزیاب پیشنهادی</option>
+                    </select>
+                    <button class="body-main_information_new-received-file_header_confrim-btn">تایید</button>
+                    <span class="body-main_information_new-received-file_header_row">:ردیف</span>
+                    <span class="body-main_information_new-received-file_header_row-value">225</span>
+                    <span class="body-main_information_new-received-file_header_code">:کد</span>
+                    <span class="body-main_information_new-received-file_header_code-value">1234567</span>
+                    <span class="body-main_information_new-received-file_header_date">:تاریخ تشکیل پرونده</span>
+                    <span class="body-main_information_new-received-file_header_date-value">1400/04/21</span>
+                    <button class="body-main_information_new-received-file_header_entry-btn">ورود به صفحه پرونده</button>
+                </header>
+                <div class="body-main_information_new-received-file_inner">
+                    <div class="body-main_information_new-received-file_inner_general-info">
+                        <div class="body-main_information_new-received-file_inner_general-info_title">مشخصات عمومی پرونده</div>
+                        <div class="body-main_information_new-received-file_inner_general-info_province">
+                            <span class="body-main_information_new-received-file_inner_general-info_province_name">:استان</span>
+                            <span class="body-main_information_new-received-file_inner_general-info_province_value">تهران</span>
+                        </div>
+                    </div>
+                    <div class="body-main_information_new-received-file_inner_injured-info">
+                        <div class="body-main_information_new-received-file_inner_injured-info_title">مشخصات زیان دیده</div>
+                        <div class="body-main_information_new-received-file_inner_injured-info_name">
+                            <span class="body-main_information_new-received-file_inner_injured-info_name_title">:نام و نام خانوادگی</span>
+                            <span class="body-main_information_new-received-file_inner_injured-info_name_vlue">مهرنوش بهمنی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <aside class="aside">
-        
+        <ul class="aside_items">
+            <li class="aside_items_logo">
+                <figure class="aside_items_logo_figure">
+                    <img class="aside_items_logo_figure_img">
+                </figure>
+                <span class="aside_items_logo_title">ایرانیان پوشش</span>
+            </li>
+            <li class="aside_items_main">
+                <figure class="aside_items_main_figure">
+                    <img class="aside_items_main_figure_img">
+                </figure>
+                <span class="aside_items_main_title">صفحه اصلی</span>
+            </li>
+            <li class="aside_items_sent">
+                <figure class="aside_items_sent_figure">
+                    <img class="aside_items_sent_figure_img">          
+                </figure>
+                <span class="aside_items_sent_title">دریافتی جدید</span>
+            </li>
+            <li class="aside_items_received">
+                <figure class="aside_items_received_figure">
+                    <img class="aside_items_received_figure_img">
+                </figure>
+                <span class="aside_items_received_title">ارسال شده به ارزیاب</span>
+            </li>
+            <li class="aside_items_file">
+                <figure class="aside_items_file_figure">
+                    <img class="aside_items_file_figure_img">
+                </figure>
+                <span class="aside_items_file_title">صفحه پرونده</span>
+            </li>
+        </ul>
     </aside>
-    <div class="body-main"></div>
 </body>
+
 </html>

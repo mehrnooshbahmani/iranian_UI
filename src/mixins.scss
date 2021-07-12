@@ -1,0 +1,50 @@
+@mixin circle-svg{
+    r: 40;
+    fill:none;
+    stroke-width: 8;
+    stroke-dashoffset:calc(100 * 2.6);
+    stroke-dasharray:calc(100 * 2.6);
+    stroke: $catskillWhite;
+    transition: ease 1s;
+}
+@mixin circle-progress {
+    @include circle-svg; 
+    stroke-dashoffset:calc((100 * 2.6) - ((100 * 2.6) * 100) / 100);
+    
+}
+@mixin circle-compeleted{
+    @include circle-svg;
+    position: relative;
+    z-index: 1;
+}
+@mixin expert-circle-svg{
+    r: 80;
+    fill:none;
+    stroke-width: 40;
+    stroke-dashoffset:calc(100 * 5.3);
+    stroke-dasharray:calc(100 * 5.3);
+    stroke: $catskillWhite;
+    transition: ease 1s;
+}
+@mixin expert-circle-progress {
+    @include expert-circle-svg; 
+    stroke-dashoffset:calc((100 * 5.3) - ((100 * 5.3) * 100) / 100);
+}
+@mixin expert-circle-compeleted{
+    @include expert-circle-svg;
+    position: relative;
+}
+@mixin percent{
+    font-weight: bold;
+    position: absolute;
+    top: 36%;
+}
+@mixin  expert-statistics-font-size {
+    font-size: 12px;
+}
+@mixin  situation-statistics-font-size {
+    font-size: 12px;
+}
+@mixin  aside-font-size {
+    font-size: 12px;
+}
